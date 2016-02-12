@@ -1,4 +1,4 @@
-# window resize window
+# analytics
 
 A module that acts as an interface to Google Analytics
 
