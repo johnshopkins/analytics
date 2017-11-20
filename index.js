@@ -34,7 +34,7 @@ Analytics.prototype.trackEvent = function (obj) {
 
   obj.hitType = "event";
 
-  // console.log(obj);
+  if (this.env !== "local") console.log(obj);
 
   if (this.env !== "production") return;
 
@@ -53,6 +53,8 @@ Analytics.prototype.trackEvent = function (obj) {
 Analytics.prototype.trackPageview = function (obj) {
 
   obj.hitType = "pageview";
+
+  if (this.env !== "local") console.log(obj);
 
   if (this.env !== "production") return;
 
